@@ -27,8 +27,6 @@ class gaussian:
         data = np.random.normal(self.loc, self.scale, size = samples)
         sns.kdeplot(data, ax = ax, fill = True)
 
-    
-
 class environment:
     
     def __init__(self, n_adds):
@@ -90,7 +88,6 @@ class environment:
         
         except Exception:
             print("The add no. exceeds the add limit")
-            
         
 if __name__ == '__main__':
     test_env = environment(5)
