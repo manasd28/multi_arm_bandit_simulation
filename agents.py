@@ -29,7 +29,7 @@ class greedy:
         for add in range(1, self.n_adds+1):
             print(f"Add {add}: ", self.scores[add-1])
             
-class greedy_exploration:
+class greedy_epsilon:
     
     def __init__(self, n_adds, exp):
         self.exp = exp

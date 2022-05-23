@@ -56,7 +56,7 @@ class environment:
         print("\nThe environment info. is as follows:\n")
         print(f"The total no. of adds = {self.n_adds}\n")
         for ind, add in enumerate(self.adds):
-            print(f"Add {ind} ({type(add).__name__} dist): ", end = "")
+            print(f"Add {ind+1} ({type(add).__name__} dist): ", end = "")
             if(type(add).__name__ == 'skewnorm'):
                 print(f"a: {add.a}, loc: {add.loc}")
             else:
